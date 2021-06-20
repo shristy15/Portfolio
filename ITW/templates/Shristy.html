@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'css/Aayush.css' %}">
+<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<style>
+  html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Raleway;
+  position: relative;
+}
+
+h1 {
+  font-family: Catamaran;
+  font-weight: 600;
+  color: #c165dd;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.content-section {
+  vertical-align: middle;
+  padding: 50px 25px;
+}
+
+#home {
+  min-height: 100vh;
+  background: url('https://s8.postimg.org/xntalotth/photo_1444927714506_8492d94b4e3d.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  background-color: #bb91d3;
+}
+
+#home h1 {
+  font-size: 25vmin;
+  color: #E2EFF1;
+}
+
+#home h2 {
+  font-size: 5vmin;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+}
+
+#about {
+  background-color: #e2f1ed;
+  font-size: 1.25em;
+}
+
+#about .portrait {
+  width: auto;
+  max-width: 50%;
+  height: 400px;
+  margin-left: 10px;
+  margin-bottom: 200px;
+}
+
+
+#about h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#about h2 em {
+  font-style: normal;
+  font-weight: bold;
+  color: #c165dd;
+}
+
+#about li {
+  line-height: 2em;
+}
+
+
+
+
+.detail-caption {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+
+#contact {
+  background-color: #c165dd;
+}
+
+#contact h1 {
+  color: #000000;
+}
+
+#contact p {
+  color: #000000;
+  font-size: 1.25em;
+}
+
+.contact-button {
+  padding: 5px;
+}
+
+.contact-button .btn,
+.contact-button .btn:hover,
+.contact-button .btn:focus,
+.contact-button .btn:active,
+.contact-button .btn.active {
+  background: none;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.contact-button .btn {
+  color: #E2EFF1;
+  border: 2px solid #E2EFF1;
+}
+.contact-button .btn:hover {
+  color: #B6D5E1;
+  border: 2px solid #B6D5E1;
+  transition: all .25s ease;
+}
+
+.contact-button .btn:focus,
+.contact-button .btn:active,
+.contact-button .btn.active{
+  color: #157a2e;
+  border: 2px solid #157a2e;
+}
+
+
+.contact-button .btn i {
+  display: block;
+  float: left;
+  font-size: 32px;
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+}
+
+.contact-button .btn:active, .contact-butoon .bn.active {
+  box-shadow: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(103, 31, 145);
+  }
+
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(235, 233, 144);
+    color: rgb(207, 131, 131);
+  }
+
+  .topnav a.active {
+    background-color: #690077;
+    color: rgb(0, 0, 0);
+  }
+
+
+</style>
+<body>
+   
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="Shristy">Shristy</a>
+    <a href="Aryan">Aryan</a>
+    <a href="Aayush">Aayush</a>
+  </div>
+<div id="home" class="content-section">
+  <div class="container">
+  <div class="row">
+  <div class="page-header">
+  <h1>>Shristy<</h1>
+  <h2>"You get what you give"</h2>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div id="about" class="content-section">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1>About Me</h1>
+</div>
+</div>
+<div class="row">
+   <div class="col-sm-6">
+   <img src="{% static 'images/Me.jpeg' %}" alt="My image"   class="img-rounded portrait pull-right">
+   <p class="lead">Hello, I'm Shristy Kashyap.</p>
+   <p> I am a student at IIIT Naya Raipur, pursuing BTech in Electronics and Communication.<br>I did my schooling from the Delhi Public School, Vindhyanagar.</p>
+  <p>I am interested in tech related stuff and would love to explore different fields in the coding world.</p>
+  </div>
+   <div class="col-sm-3 col-xs-6">
+    <h2>Languages I've  <em>learned</em></h2>
+    <ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>Python</li>
+          
+  </ul>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+  <h2>I am <em> interested in</em></h2>
+  <ul>
+  <li>Badminton</li>
+  <li>Cooking</li>
+  <li>Singing</li>
+  <li>Drawing </li>
+  </ul>
+  
+  </div>
+ <div class="col-sm-3 col-xs-6">
+  <h2>Personal  <em>STUFF! :)</em></h2>
+  <p>I am an Introvert, someday I would love to visit Northern Lights in Norway<br>
+   </p>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<div id="contact" class="content-section">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  <h1>Contact</h1>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-4">
+   <p>Get in touch with me on social media!</p>
+   <p>I'd be happy to connect with you !!!!!!</p>
+  </div>
+  <div class="col-md-8">
+  <div class="row">
+  <i class="col-sm-6 contact-button">
+  <a  href="https://github.com/shristy15" style="font-size: 30px;"><i class="fa fa-github "></i> </a>
+  </i>
+  <i class="col-sm-6 contact-button">
+  <a  href="https://www.instagram.com/shristyy_15/" style="font-size: 30px;"><i class="fa fa-instagram "></i> </a>
+  </i>
+   <i class="col-sm-6 contact-button">
+ <a  href="https://www.linkedin.com/in/shristy-kashyap-ab0908180/"  style="font-size: 30px;"><i class="fa fa-linkedin "></i></a>
+   </i>
+ <i class="col-sm-6 contact-button">
+  <a  href="https://www.facebook.com/shristy.kashyap.395"  style="font-size: 30px;"><i class="fa fa-facebook "></i> </a>
+ </i>
+ <div class="mail">
+  <p>Mail me at : shristykashyap2000@gmail.com</p>
+</div>
+ </div>
+ </div>
+ </div>
+</div>
+</div>

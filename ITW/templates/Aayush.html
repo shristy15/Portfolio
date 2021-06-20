@@ -1,0 +1,279 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'css/Aayush.css' %}">
+<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<script src="https://use.fontawesome.com/328956f0fb.js" ></script>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <title>Portfolio</title>
+</head>
+<style>
+ 
+
+ html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Raleway;
+  position: relative;
+}
+
+h1 {
+  font-family: Catamaran;
+  font-weight: 600;
+  color: #555273;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.content-section {
+  vertical-align: middle;
+  padding: 50px 25px;
+}
+
+#home {
+  min-height: 100vh;
+  background: url('https://s8.postimg.org/xntalotth/photo_1444927714506_8492d94b4e3d.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  background-color: #B6D5E1;
+}
+
+#home h1 {
+  font-size: 25vmin;
+  color: #E2EFF1;
+}
+
+#home h2 {
+  font-size: 5vmin;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+}
+
+#about {
+  background-color: #E2EFF1;
+  font-size: 1.25em;
+}
+
+#about .portrait {
+  width: auto;
+  max-width: 50%;
+  height: 400px;
+  margin-left: 10px;
+  margin-bottom: 200px;
+}
+
+
+#about h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#about h2 em {
+  font-style: normal;
+  font-weight: bold;
+  color: #65799B;
+}
+
+#about li {
+  line-height: 2em;
+}
+
+
+
+
+.detail-caption {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+
+#contact {
+  background-color: #65799B;
+}
+
+#contact h1 {
+  color: #E2EFF1;
+}
+
+#contact p {
+  color: #E2EFF1;
+  font-size: 1.25em;
+}
+
+.contact-button {
+  padding: 5px;
+}
+
+.contact-button .btn,
+.contact-button .btn:hover,
+.contact-button .btn:focus,
+.contact-button .btn:active,
+.contact-button .btn.active {
+  background: none;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.contact-button .btn {
+  color: #E2EFF1;
+  border: 2px solid #E2EFF1;
+}
+.contact-button .btn:hover {
+  color: #B6D5E1;
+  border: 2px solid #B6D5E1;
+  transition: all .25s ease;
+}
+
+.contact-button .btn:focus,
+.contact-button .btn:active,
+.contact-button .btn.active{
+  color: #555273;
+  border: 2px solid #555273;
+}
+
+
+.contact-button .btn i {
+  display: block;
+  float: left;
+  font-size: 32px;
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+}
+
+.contact-button .btn:active, .contact-butoon .bn.active {
+  box-shadow: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #65799b;
+  }
+
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(123, 156, 152);
+    color: rgb(207, 131, 131);
+  }
+
+  .topnav a.active {
+    background-color: #44649b;
+    color: rgb(0, 0, 0);}
+
+
+</style>
+<body>
+   
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="Shristy">Shristy</a>
+    <a href="Aryan">Aryan</a>
+    <a href="Aayush">Aayush</a>
+  </div>
+<div id="home" class="content-section">
+  <div class="container">
+  <div class="row">
+  <div class="page-header">
+  <h1>>Aayush<</h1>
+  <h2>"Trust the timing of ur life"</h2>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div id="about" class="content-section">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1>About Me</h1>
+</div>
+</div>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="{% static 'images/Aayush2.jpeg' %}" alt="My image"   class="img-rounded portrait pull-right">
+        <p class="lead">Hi, I'm Aayush Dewangan.</p>
+        <p> I am a student at IIIT Naya Raipur, pursuing BTech in Data Science and Artificial Intelligence.I did my schooling at Krishna Public School, Nehru Nagar Bhilai.</p>
+        <p>Talking about academics, I love Maths and like others I always hated Chemistry.  I am very new to programming and I am already in love with coding kind of stuff.</p>
+  </div>
+   <div class="col-sm-3 col-xs-6">
+    <h2>Languages I've  <em>learned</em></h2>
+    <ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>Python</li>
+          
+  </ul>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+  <h2>I am <em> interested in</em></h2>
+  <ul>
+  <li>Cricket</li>
+  <li>Table Tennis</li>
+  <li>Chess</li>
+  <li>Watching movies</li>
+  </ul>
+  <p>I am a Machine Learning enthusiast as it involves both maths and python. One can say that I am a quick learner.</p>
+  </div>
+ <div class="col-sm-3 col-xs-6">
+  <h2>Personal  <em>STUFF! :)</em></h2>
+  <p>What I enjoy the most is spending time with my friends. I am someone who cries while watching emotional scenes in the movies.<br> Also, I am an <strong>INTROVERT</strong> .</p>
+   </div>
+  </div>
+  </div>
+</div>
+
+
+<div id="contact" class="content-section">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  <h1>Contact</h1>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-4">
+   <p>Get in touch with me on social media!</p>
+   <p>I'd be happy to connect with you !!!!!!</p>
+  </div>
+  <div class="col-md-8">
+  <div class="row">
+  <span class="col-sm-6 contact-button">
+  <a  href="https://github.com/aayushdewangan11" style="font-size: 30px;"><i class="fa fa-github" aria-hidden="true"></i> </a>
+  </span>
+  <span class="col-sm-6 contact-button">
+  <a  href="https://www.instagram.com/__aayush1111__/" style="font-size: 30px;"><i class="fa fa-instagram" aria-hidden="true"></i> </a>
+  </span>
+   <span class="col-sm-6 contact-button">
+ <a  href="https://www.linkedin.com/in/aayush-dewangan-57ab85203/" style="font-size: 30px;"><i class="fa fa-linkedin"></i></a>
+   </span>
+ <span class="col-sm-6 contact-button">
+  <a  href="https://www.facebook.com/aayush.dewangan.96/" style="font-size: 30px;"><i class="fa fa-facebook"></i> </a>
+ </span>
+ <div class="mail">
+   <p>Mail me at: aayushdewangan20@gmail.com</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+</div>

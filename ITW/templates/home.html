@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+
+</head>
+<title>
+  Portfolio
+</title>
+<style>
+  body {
+  background-color: rgb(211, 233, 233);
+  margin: 0%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(59, 184, 179);
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #3c78a0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(230, 139, 139);
+  }
+  
+  .topnav a.active {
+    background-color: #a1ebd0;
+    color: rgb(142, 228, 62);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .a1{
+    font-family: 'Sigmar one', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background: rgb(217,238,178);
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #df7373, #e43a3a);
+  color: #fff;
+  
+  }
+  #more{
+    display: none;
+  }
+  #mmore{
+    display: none;
+  }
+  #mmmore{
+    display: none;
+  }
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Sigmar One', cursive;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+    
+  }
+  .footer{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    background: rgb(32, 172, 167);
+    bottom: 0%;
+    color: #ddd;
+    font-size: larger;
+  }
+</style>
+
+<body>
+<script> function Function1() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }}
+    </script>
+ <script> function Function2() {
+  var dots = document.getElementById("dotss");
+  var moreText = document.getElementById("mmore");
+  var btnText = document.getElementById("Btn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }}
+  </script>
+  <script> function Function3() {
+    var dots = document.getElementById("dotsss");
+    var moreText = document.getElementById("mmmore");
+    var btnText = document.getElementById("mBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }}
+    </script>
+    <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <a href="/Shristy">Shristy</a>
+  <a href="/Aryan">Aryan</a>
+  <a href="/Aayush">Aayush</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2 class="a1">Tres Amigos </h2>
+  
+</div>
+
+
+<div class="row">
+      <div class="card">
+        <div class="card-header">
+          
+<img src="{% static 'images/Aayush_final.jpg' %}" alt="My image" width="180" height="240">
+              </div>
+        <div class="card-body">
+          <p>
+            Hey myself Aayush Dewangan,and my goal is to keep everyone around me happy.<span id="dots">...</span><span id="more">Time management and smart work are the two major things that make me different. More than my knowledge towards the technical side, my interests strive me towards it every day.</span>
+          </p>
+          <button onclick="Function1()" id="myBtn">Read more</button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+        
+<img src="{% static 'images/aryan2.jpeg' %}" alt="My image" width="180" height="240">
+        </div>
+        <div class="card-body">
+          <p>
+            Hey myself Aryan Kaul and I am a "Happy go lucky" person.<span id="dotss">...</span><span id="mmore"> My inquisitive brain is something that gets me going everyday towards new opportunities. I really enjoy programming and wish to take my interests to a whole new level.</span>
+          </p>
+          <button onclick="Function2()" id="Btn">Read more</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          
+<img src="{% static 'images/shristy.jpg' %}" alt="My image" width="200" height="250">
+        </div>
+        <div class="card-body">
+          <p>
+            Hey myself Shristy Kashyap and I strongly believe in "Following your heart".<span id="dotsss">...</span><span id="mmmore"> I am a technical enthusiast and wish to explore the field of Web development . Looking forward to build more websites and getting a beautiful tour of the world.</span>
+          </p>
+          <button onclick="Function3()" id="mBtn">Read more</button>
+        </div>
+      </div>
+      </div>
+      <footer class="footer">
+        <p>About us<br>_____________________________<br></p>
+        <p>Students of IIIT NR</p>
+
+      </footer>
+
+</body>
+</html>
+
